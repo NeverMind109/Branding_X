@@ -1,0 +1,24 @@
+// ≥1200px
+@include media-breakpoint-down(xl) {
+}
+// ≥992px
+@include media-breakpoint-down(lg) {
+  //   .container {
+  //     max-width: 1220px;
+  //   }
+}
+// ≥768px
+@include media-breakpoint-down(md) {
+}
+// ≥576px
+@include media-breakpoint-down(sm) {
+  .header {
+    padding: 20px 0;
+    &__buttons {
+      padding: 30px 20px 0;
+    }
+  }
+  .cart {
+    margin-right: auto;
+  }
+}
