@@ -1,17 +1,116 @@
 // ≥1200px
 @include media-breakpoint-down(xl) {
+  .hero {
+    &__info-wrapper {
+      top: 10%;
+      transform: translateY(0);
+    }
+    &__image {
+      height: 700px;
+    }
+    &__img {
+      width: 400px;
+      height: 700px;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    &__contact {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
 }
 // ≥992px
 @include media-breakpoint-down(lg) {
-  //   .container {
-  //     max-width: 1220px;
-  //   }
+  .hero {
+    &__inner {
+      padding: 30px 0;
+    }
+    &__info-container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__info-wrapper {
+      width: 80%;
+      position: static;
+      top: 0;
+    }
+    &__info-content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__image-container {
+      width: 80%;
+      margin: 30px auto 0;
+      text-align: center;
+    }
+    &__image {
+      height: 400px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__img {
+      transform: rotateZ(90deg);
+      height: 700px;
+      width: 400px;
+    }
+  }
 }
 // ≥768px
 @include media-breakpoint-down(md) {
+  .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .contact-btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 56px;
+  }
+  .more-btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 56px;
+  }
+  .hero {
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__image {
+      height: 600px;
+    }
+    &__img {
+      transform: rotateZ(0deg);
+      height: 600px;
+    }
+  }
 }
 // ≥576px
 @include media-breakpoint-down(sm) {
+  body {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .section-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
   .header {
     padding: 20px 0;
     &__buttons {
@@ -20,5 +119,27 @@
   }
   .cart {
     margin-right: auto;
+  }
+  .hero {
+    &__info-wrapper {
+      width: 100%;
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__image-container {
+      width: 100%;
+    }
+    &__image {
+      height: 500px;
+    }
+    &__img {
+      height: 500px;
+      width: 310px;
+    }
   }
 }
