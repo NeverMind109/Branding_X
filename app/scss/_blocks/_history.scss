@@ -1,0 +1,30 @@
+.history {
+  &__wrapper {
+    border-bottom: 1px solid #dad9d6;
+  }
+  &__btn {
+    max-width: 295px;
+  }
+  &__division {
+    padding: 0;
+  }
+  &__text {
+    max-width: 420px;
+    &--left {
+      text-align: left;
+      margin: 5px 0 105px;
+    }
+    &--right {
+      text-align: right;
+      margin-top: 63px;
+    }
+  }
+  &__img {
+    max-width: 492px;
+    width: 100%;
+    height: auto;
+  }
+  &__img-decorative {
+    width: 354px;
+  }
+}
