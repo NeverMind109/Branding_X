@@ -48,8 +48,11 @@
   .section {
     padding: 200px 0;
   }
+  .section-title {
+    padding: 0;
+  }
   .heading {
-    margin: 0 auto 50px;
+    padding-bottom: 50px;
     &__title {
       text-align: center;
       margin-bottom: 30px;
@@ -175,6 +178,17 @@
       height: 450px;
     }
   }
+  .steps {
+    &__description {
+      text-align: center;
+    }
+    &__card {
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 // ≥768px
 @include media-breakpoint-down(md) {
@@ -184,7 +198,6 @@
   .section-title {
     font-size: 30px;
     line-height: 40px;
-    padding: 0;
   }
   .contact-btn {
     font-size: 16px;
@@ -237,7 +250,7 @@
     padding: 50px 0;
   }
   .heading {
-    margin: 0 auto 40px;
+    padding-bottom: 40px;
   }
   body {
     font-size: 16px;
@@ -351,6 +364,19 @@
     &__img {
       width: 300px;
       height: 300px;
+    }
+  }
+  .steps {
+    &__description {
+      font-size: 16px;
+    }
+    &__card {
+      max-width: 320px;
+      border: none;
+      border-radius: 0;
+    }
+    &__card-text {
+      font-size: 16px;
     }
   }
 }

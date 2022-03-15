@@ -1,24 +1,19 @@
-.services {
+.steps {
   &__wrapper {
-    padding: 240px 0 140px;
     border-bottom: 1px solid #dad9d6;
   }
-  &__card-title-decoration {
-    color: #ff7549;
-    padding-right: 5px;
-  }
-  &__btn {
-    max-width: 364px;
+  &__description {
+    font-size: 17px;
+    text-align: left;
   }
   &__card {
-    max-width: 340px;
+    max-width: 350px;
     border: none;
     border-radius: 0;
-    margin-bottom: 100px;
   }
   &__card-image {
+    height: 84px;
     margin: 0 0 23px;
-    height: 92px;
   }
   &__card-img {
     object-fit: contain;
@@ -32,7 +27,12 @@
     color: #181a3f;
     margin-bottom: 13px;
   }
+  &__card-title-decoration {
+    color: #ff7549;
+    padding-right: 5px;
+  }
   &__card-text {
+    font-size: 18px;
     word-break: break-word;
   }
 }
