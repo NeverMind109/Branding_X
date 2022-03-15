@@ -10,6 +10,7 @@
   }
   &__text {
     max-width: 420px;
+    word-break: break-word;
     &--left {
       text-align: left;
       margin: 5px 0 105px;

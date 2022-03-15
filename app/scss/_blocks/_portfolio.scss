@@ -1,0 +1,41 @@
+.portfolio {
+  &__btn {
+    max-width: 270px;
+  }
+  &__project {
+    padding: 64px 0;
+    border-bottom: 1px solid #dad9d6;
+  }
+  &__project-name {
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: #181a3f;
+  }
+  &__project-theme {
+    &::after {
+      content: "/";
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.72px;
+      text-transform: uppercase;
+      color: #d9d8d5;
+      margin: 0 3px;
+    }
+  }
+  &__project-info {
+    max-width: 650px;
+    margin: 0 auto 0 0;
+  }
+  &__project-topic {
+    font-size: 38px;
+    line-height: 50px;
+    color: #181a3f;
+    margin-bottom: 20px;
+  }
+  &__project-text {
+    word-break: break-word;
+  }
+}

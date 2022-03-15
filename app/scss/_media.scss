@@ -112,6 +112,21 @@
       text-align: center;
     }
   }
+  .portfolio {
+    &__project {
+      padding: 45px 0;
+    }
+    &__project-name {
+      line-height: 35px;
+    }
+    &__project-topic {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__project-info {
+      max-width: 95%;
+    }
+  }
 }
 // ≥768px
 @include media-breakpoint-down(md) {
@@ -249,6 +264,21 @@
     &__img {
       max-width: 300px;
       max-height: 300px;
+    }
+  }
+  .portfolio {
+    &__btn {
+      max-width: 295px;
+    }
+    &__project {
+      padding: 30px 10px;
+    }
+    &__project-topic {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    &__project-info {
+      margin: 0;
     }
   }
 }
