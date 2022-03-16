@@ -6,6 +6,9 @@
     font-size: 17px;
     text-align: left;
   }
+  &__cards {
+    margin: 0 0 75px;
+  }
   &__card {
     max-width: 350px;
     border: none;
@@ -34,5 +37,13 @@
   &__card-text {
     font-size: 18px;
     word-break: break-word;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__contact {
+    margin-right: 28px;
   }
 }

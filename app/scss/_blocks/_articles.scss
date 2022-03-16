@@ -1,0 +1,59 @@
+.articles {
+  &__wrapper {
+    border-bottom: 1px solid #dad9d6;
+  }
+  &__btn {
+    max-width: 350px;
+    padding: 5px 56px;
+  }
+  &__cards {
+    margin: 0;
+  }
+  &__card {
+    max-width: 418px;
+    border: none;
+    border-radius: 0;
+    padding: 0 15px;
+  }
+  &__card-image {
+    margin-bottom: 32px;
+  }
+  &__card-img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
+  &__card-body {
+    padding: 0;
+  }
+  &__project-name {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+  &__project-theme {
+    &::after {
+      content: "/";
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.72px;
+      text-transform: uppercase;
+      color: #d9d8d5;
+      margin: 0 3px;
+    }
+  }
+  &__card-title {
+    font-size: 28px;
+    line-height: 39px;
+    color: #181a3f;
+    margin-bottom: 17px;
+  }
+  &__card-text {
+    font-size: 17px;
+    word-break: break-word;
+  }
+}
