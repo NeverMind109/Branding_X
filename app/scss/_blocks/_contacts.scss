@@ -1,0 +1,35 @@
+.contacts {
+  background: #f0efec;
+  padding: 180px 0;
+  border-bottom: 1px solid #dad9d6;
+  &__wrapper {
+    margin: 0;
+  }
+  &__title {
+    font-size: 60px;
+    line-height: 74px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #181a3f;
+  }
+  &__communication {
+    text-align: left;
+  }
+  &__item {
+    font-size: 32px;
+    line-height: 49px;
+    color: #181a3f;
+    &::before {
+      content: "/";
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 49px;
+      color: #ff7549;
+      margin: 0 3px 0 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

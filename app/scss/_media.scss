@@ -196,6 +196,20 @@
       }
     }
   }
+  .contacts {
+    padding: 150px 0;
+    &__wrapper {
+      text-align: center;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 65px;
+      margin-bottom: 40px;
+    }
+    &__communication {
+      text-align: center;
+    }
+  }
 }
 // ≥768px
 @include media-breakpoint-down(md) {
@@ -266,6 +280,17 @@
     &__more {
       max-width: 295px;
       width: 100%;
+    }
+  }
+  .contacts {
+    padding: 100px 0;
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &__item {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }
@@ -415,8 +440,26 @@
     &__card {
       max-width: 320px;
     }
+    &__card-image {
+      margin-bottom: 20px;
+    }
     &__card-body {
       text-align: center;
+    }
+  }
+  .contacts {
+    padding: 50px 0;
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+    &__item {
+      font-size: 20px;
+      line-height: 20px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
 }
