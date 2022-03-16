@@ -31,5 +31,8 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+    &:hover {
+      color: #181a3f;
+    }
   }
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="row d-flex align-items-center col-12">
           <a
@@ -608,13 +608,91 @@
           <div class="row contacts__wrapper d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center col-12">
             <h2 class="contacts__title col-lg-5 col-12">Let's work together</h2>
             <div class="contacts__communication col-lg-5 col-12">
-              <h3 class="contacts__item">contact@branding.com</h3>
-              <h3 class="contacts__item">+1 (414) 840 - 3207</h3>
+              <a class="contacts__item" href="mailto:contact@branding.com">contact@branding.com</a>
+              <a class="contacts__item" href="tel:+14148403207">+1 (414) 840 - 3207</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__wrapper d-flex align-items-start">
+          <div class="footer__block d-flex flex-column align-items-center align-items-lg-start col-12 col-lg-3">
+            <a
+            class="logo footer__logo"
+            href="#header"
+          >
+            <img
+              class="logo__img"
+              src="images/logo.svg"
+              alt="Logo"
+              width="245"
+              height="48"
+            />
+          </a>
+          <a class="footer__contacts" href="mailto:contact@branding.com">contact@branding.com</a>
+          <a class="footer__contacts" href="tel:+14148403207">+1 (414) 840 - 3207</a>
+          </div>
+          <div class="footer__navigation d-flex align-items-center justify-content-center justify-content-lg-end col">
+            <ul class="footer__list">
+              <li class="footer__list-item"><h3 class="footer__list-title">Pages</h3></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Home</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">About</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Blog</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Blog post</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Portfolio</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Portfolio single</a></li>
+            </ul>
+            <ul class="footer__list footer__list-info">
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Packages</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Packages single</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Contact</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Team member</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item"><h3 class="footer__list-title">Utility Pages</h3></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Start Here</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Style guide</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">404 Not Found</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Password Protected</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Licenses</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <div class="container">
+        <div class="row copyright__wrapper d-flex align-items-center justify-content-lg-between justify-content-center">
+          <ul class="copyright__list d-md-flex d-block col-12 col-md-auto">
+            <li class="copyright__item">Copyright © Branding X</li>
+            <li class="copyright__item copyright__item--decorative d-md-flex d-none">|</li>
+            <li class="copyright__item">Designed by BRIX Templates</li>
+            <li class="copyright__item copyright__item--decorative d-md-flex d-none">-</li>
+            <li class="copyright__item">Powered by Webflow</li>
+          </ul>
+          <div class="social-network col-auto">
+            <a class="social-network__link" href="#">
+              <img class="social-network__img" src="images/facebook-icon.svg" alt="Facebook Icon" width="12" height="22">
+            </a>
+            <a class="social-network__link" href="#">
+              <img class="social-network__img" src="images/twitter-icon.svg" alt="Twitter Icon" width="22" height="20">
+            </a>
+            <a class="social-network__link" href="#">
+              <img class="social-network__img" src="images/instagram-icon.svg" alt="Instagram Icon" width="22" height="22">
+            </a>
+            <a class="social-network__link" href="#">
+              <img class="social-network__img" src="images/linked-in-icon.svg" alt="Linked In Icon" width="22" height="22">
+            </a>
+            <a class="social-network__link" href="#">
+              <img class="social-network__img" src="images/youtube-icon.svg" alt="Youtube Icon" width="25" height="17">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/main.min.js"></script>
   </body>
 </html>

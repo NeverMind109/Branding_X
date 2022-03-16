@@ -1,0 +1,12 @@
+.copyright {
+  padding: 38px 0 30px;
+  background: #f0efec;
+  &__wrapper {
+    margin: 0;
+  }
+  &__item {
+    &--decorative {
+      padding: 0 5px;
+    }
+  }
+}

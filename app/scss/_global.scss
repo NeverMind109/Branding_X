@@ -92,3 +92,14 @@ body {
     color: #ff7549;
   }
 }
+.social-network {
+  text-align: end;
+  &__link {
+    &:not(:last-child) {
+      padding-right: 28px;
+    }
+  }
+  &__img {
+    object-fit: contain;
+  }
+}
