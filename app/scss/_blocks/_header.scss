@@ -1,5 +1,11 @@
 .header {
   padding: 37px 0;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: rgba(#fff, 1);
 }
 .logo {
   &__img {
@@ -21,7 +27,7 @@
   cursor: pointer;
   margin-right: 16px;
 }
-.menu {
+.menu-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

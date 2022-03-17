@@ -52,6 +52,41 @@ body {
   color: #181a3f;
   padding-left: 0;
 }
+.navigation {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  min-width: 320px;
+  top: 122px;
+  left: 0;
+  right: 0;
+  background-color: rgba(#fff, 1);
+  transform: translateY(-300%);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  z-index: 20;
+  &--active {
+    display: flex;
+    transform: translateY(0);
+  }
+}
+.menu {
+  padding: 30px 0;
+  border-top: 1px solid #dad9d6;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link {
+      font-size: 20px;
+      line-height: 24px;
+      color: #555671;
+      &:hover {
+        color: #ff7549;
+      }
+    }
+  }
+}
 .heading {
   margin: 0 auto;
   padding: 0 12px 80px;

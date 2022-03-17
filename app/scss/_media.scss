@@ -64,6 +64,19 @@
       margin-bottom: 30px;
     }
   }
+  .navigation {
+    bottom: 0;
+  }
+  .menu {
+    &-list {
+      flex-direction: column;
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
   .hero {
     &__inner {
       padding: 30px 0;
@@ -368,10 +381,13 @@
   .more-btn {
     padding: 17px 30px;
   }
+  .navigation {
+    top: 140px;
+  }
   .header {
     padding: 20px 0;
     &__buttons {
-      padding: 30px 20px 0;
+      padding: 20px 20px 0;
     }
   }
   .cart {

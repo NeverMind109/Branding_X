@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header">
       <div class="container">
         <div class="row d-flex align-items-center col-12">
           <a
-            class="logo d-flex justify-content-sm-start justify-content-center col-12 col-sm-6"
-            href="#header"
+            class="logo d-flex justify-content-sm-start justify-content-center col-12 col-sm-6 scroll-to"
+            href="#home"
           >
             <img
               class="logo__img"
@@ -35,16 +35,49 @@
             <button class="cart">
               Cart(<span class="cart__quantity">0</span>)
             </button>
-            <button class="menu" type="button" aria-label="Mobile Menu">
-              <span class="menu__line"></span>
-              <span class="menu__line"></span>
+            <button class="menu-btn" type="button" aria-label="Mobile Menu">
+              <span class="menu-btn__line"></span>
+              <span class="menu-btn__line"></span>
             </button>
           </div>
         </div>
       </div>
     </header>
+    <div class="navigation">
+      <div class="container">
+        <nav class="row menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#home">Home</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#about">About Us</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#history">Our story</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#portfolio"
+                >Our portfolio</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#steps"
+                >How we work?</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#articles">Articles</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link scroll-to" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main class="content">
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero__inner">
           <div class="hero__info-container">
             <div class="hero__info-wrapper">
@@ -58,7 +91,7 @@
                 </p>
                 <div class="hero__buttons">
                   <a class="contact-btn hero__contact" href="#"
-                    ><span class="more-btn__text">Contact us</span></a
+                    ><span class="contact-btn__text">Contact us</span></a
                   >
                   <a class="more-btn hero__more" href="#"
                     ><span class="more-btn__text">Our Projects</span></a
@@ -80,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="about">
         <div class="container">
           <div class="services__wrapper">
             <div
@@ -236,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="history">
+      <section class="history" id="history">
         <div class="section history__wrapper">
           <div class="container">
             <div
@@ -316,7 +349,7 @@
           </div>
         </div>
       </section>
-      <section class="section portfolio">
+      <section class="section portfolio" id="portfolio">
         <div class="container">
           <div
             class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
@@ -417,33 +450,46 @@
                   Have a project? Get in touch today
                 </h1>
                 <a class="contact-btn promo__contact" href="#"
-                    ><span class="more-btn__text">Contact us</span></a
-                  >
+                  ><span class="contact-btn__text">Contact us</span></a
+                >
               </div>
             </div>
             <div class="promo__image-container">
               <div class="promo__image-wrapper">
-                <img class="promo__img" src="images/promo-image.svg" alt="" width="662" height="662">
+                <img
+                  class="promo__img"
+                  src="images/promo-image.svg"
+                  alt=""
+                  width="662"
+                  height="662"
+                />
               </div>
             </div>
+          </div>
+        </div>
       </section>
-      <section class="steps">
+      <section class="steps" id="steps">
         <div class="container">
           <div class="section steps__wrapper">
             <div
-            class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
-          >
-            <h2
-              class="section-title heading__title steps__title col-lg-6 col-12"
+              class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
             >
-            A simple, yet effective three step process.
-            </h2>
-            <p
-              class="steps__description d-flex justify-self-end justify-content-center col-lg-5 col-12"
-              >A scelerisque purus semper eget duis at tellus integer malesuada nunc vel risus commodo viverra maecenas doloro accumsan pharetra massa massa ultricie.</p
-            >
+              <h2
+                class="section-title heading__title steps__title col-lg-6 col-12"
+              >
+                A simple, yet effective three step process.
+              </h2>
+              <p
+                class="steps__description d-flex justify-self-end justify-content-center col-lg-5 col-12"
+              >
+                A scelerisque purus semper eget duis at tellus integer malesuada
+                nunc vel risus commodo viverra maecenas doloro accumsan pharetra
+                massa massa ultricie.
+              </p>
             </div>
-            <div class="row steps__cards row-cols-1 row-cols-md-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12">
+            <div
+              class="row steps__cards row-cols-1 row-cols-md-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
+            >
               <div class="card steps__card">
                 <div class="card-img-top steps__card-image">
                   <img
@@ -456,11 +502,13 @@
                 </div>
                 <div class="card-body steps__card-body">
                   <h3 class="card-title steps__card-title">
-                    <span class="steps__card-title-decoration">/</span
-                    >Project Idea
+                    <span class="steps__card-title-decoration">/</span>Project
+                    Idea
                   </h3>
                   <p class="card-text steps__card-text">
-                    A scelerisque purus semper eget duis at tellus integer malesuada nunc vel risus commodo viverra maecenas doloro accumsan pharetra massa massa ultricie.
+                    A scelerisque purus semper eget duis at tellus integer
+                    malesuada nunc vel risus commodo viverra maecenas doloro
+                    accumsan pharetra massa massa ultricie.
                   </p>
                 </div>
               </div>
@@ -476,11 +524,12 @@
                 </div>
                 <div class="card-body steps__card-body">
                   <h3 class="card-title steps__card-title">
-                    <span class="steps__card-title-decoration">/</span
-                    >Execution
+                    <span class="steps__card-title-decoration">/</span>Execution
                   </h3>
                   <p class="card-text steps__card-text">
-                    A scelerisque purus semper eget duis at tellus integer malesuada nunc vel risus commodo viverra maecenas doloro accumsan pharetra massa massa ultricie.
+                    A scelerisque purus semper eget duis at tellus integer
+                    malesuada nunc vel risus commodo viverra maecenas doloro
+                    accumsan pharetra massa massa ultricie.
                   </p>
                 </div>
               </div>
@@ -496,18 +545,19 @@
                 </div>
                 <div class="card-body steps__card-body">
                   <h3 class="card-title steps__card-title">
-                    <span class="steps__card-title-decoration">/</span
-                    >Launch
+                    <span class="steps__card-title-decoration">/</span>Launch
                   </h3>
                   <p class="card-text steps__card-text">
-                    A scelerisque purus semper eget duis at tellus integer malesuada nunc vel risus commodo viverra maecenas doloro accumsan pharetra massa massa ultricie.
+                    A scelerisque purus semper eget duis at tellus integer
+                    malesuada nunc vel risus commodo viverra maecenas doloro
+                    accumsan pharetra massa massa ultricie.
                   </p>
                 </div>
               </div>
             </div>
             <div class="steps__buttons">
               <a class="contact-btn steps__contact" href="#"
-                ><span class="more-btn__text">Contact us</span></a
+                ><span class="contact-btn__text">Contact us</span></a
               >
               <a class="more-btn steps__more" href="#"
                 ><span class="more-btn__text">Our Projects</span></a
@@ -516,26 +566,26 @@
           </div>
         </div>
       </section>
-      <section class="articles">
+      <section class="articles" id="articles">
         <div class="container">
           <div class="section articles__wrapper">
             <div
-            class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
-          >
-            <h2
-              class="section-title heading__title articles__title col-lg-7 col-12"
+              class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
             >
-            Articles & resources
-            </h2>
-            <a
-              class="more-btn articles__btn d-flex justify-self-end justify-content-center col-lg-5 col-12"
-              href="#"
-              ><span class="more-btn__text">Browse more posts</span></a
-            >
+              <h2
+                class="section-title heading__title articles__title col-lg-7 col-12"
+              >
+                Articles & resources
+              </h2>
+              <a
+                class="more-btn articles__btn d-flex justify-self-end justify-content-center col-lg-5 col-12"
+                href="#"
+                ><span class="more-btn__text">Browse more posts</span></a
+              >
             </div>
             <div
-            class="row articles__cards row-cols-1 row-cols-lg-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
-          >
+              class="row articles__cards row-cols-1 row-cols-lg-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
+            >
               <div class="card articles__card">
                 <div class="card-img-top articles__card-image">
                   <img
@@ -551,9 +601,13 @@
                     <span class="articles__card-theme">Marketing</span>
                     <span class="articles__card-year">Nov 22, 2021</span>
                   </div>
-                  <h3 class="card-title articles__card-title">The difference between UX & UI Design: A simple guide for beginner's</h3>
+                  <h3 class="card-title articles__card-title">
+                    The difference between UX & UI Design: A simple guide for
+                    beginner's
+                  </h3>
                   <p class="card-text articles__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    lobortis arcu enim urna.
                   </p>
                 </div>
               </div>
@@ -572,9 +626,12 @@
                     <span class="articles__card-theme">Development</span>
                     <span class="articles__card-year">Nov 22, 2021</span>
                   </div>
-                  <h3 class="card-title articles__card-title">Font sizes in graphic design: The complete guide to follow</h3>
+                  <h3 class="card-title articles__card-title">
+                    Font sizes in graphic design: The complete guide to follow
+                  </h3>
                   <p class="card-text articles__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    lobortis arcu enim urna.
                   </p>
                 </div>
               </div>
@@ -593,9 +650,12 @@
                     <span class="articles__card-theme">Development</span>
                     <span class="articles__card-year">Nov 22, 2021</span>
                   </div>
-                  <h3 class="card-title articles__card-title">8 design systems you can check out and download for free</h3>
+                  <h3 class="card-title articles__card-title">
+                    8 design systems you can check out and download for free
+                  </h3>
                   <p class="card-text articles__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    lobortis arcu enim urna.
                   </p>
                 </div>
               </div>
@@ -605,94 +665,181 @@
       </section>
       <section class="contacts">
         <div class="container">
-          <div class="row contacts__wrapper d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center col-12">
+          <div
+            class="row contacts__wrapper d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center col-12"
+          >
             <h2 class="contacts__title col-lg-5 col-12">Let's work together</h2>
             <div class="contacts__communication col-lg-5 col-12">
-              <a class="contacts__item" href="mailto:contact@branding.com">contact@branding.com</a>
-              <a class="contacts__item" href="tel:+14148403207">+1 (414) 840 - 3207</a>
+              <a class="contacts__item" href="mailto:contact@branding.com"
+                >contact@branding.com</a
+              >
+              <a class="contacts__item" href="tel:+14148403207"
+                >+1 (414) 840 - 3207</a
+              >
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="row footer__wrapper d-flex align-items-start">
-          <div class="footer__block d-flex flex-column align-items-center align-items-lg-start col-12 col-lg-3">
-            <a
-            class="logo footer__logo"
-            href="#header"
+          <div
+            class="footer__block d-flex flex-column align-items-center align-items-lg-start col-12 col-lg-3"
           >
-            <img
-              class="logo__img"
-              src="images/logo.svg"
-              alt="Logo"
-              width="245"
-              height="48"
-            />
-          </a>
-          <a class="footer__contacts" href="mailto:contact@branding.com">contact@branding.com</a>
-          <a class="footer__contacts" href="tel:+14148403207">+1 (414) 840 - 3207</a>
+            <a class="logo footer__logo scroll-to" href="#home">
+              <img
+                class="logo__img"
+                src="images/logo.svg"
+                alt="Logo"
+                width="245"
+                height="48"
+              />
+            </a>
+            <a class="footer__contacts" href="mailto:contact@branding.com"
+              >contact@branding.com</a
+            >
+            <a class="footer__contacts" href="tel:+14148403207"
+              >+1 (414) 840 - 3207</a
+            >
           </div>
-          <div class="footer__navigation d-flex align-items-center justify-content-center justify-content-lg-end col">
+          <div
+            class="footer__navigation d-flex align-items-center justify-content-center justify-content-lg-end col"
+          >
             <ul class="footer__list">
-              <li class="footer__list-item"><h3 class="footer__list-title">Pages</h3></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Home</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">About</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Blog</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Blog post</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Portfolio</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Portfolio single</a></li>
+              <li class="footer__list-item">
+                <h3 class="footer__list-title">Pages</h3>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Home</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">About</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Blog</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Blog post</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Portfolio</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Portfolio single</a>
+              </li>
             </ul>
             <ul class="footer__list footer__list-info">
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Packages</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Packages single</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Contact</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Team member</a></li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Packages</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Packages single</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Contact</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Team member</a>
+              </li>
             </ul>
             <ul class="footer__list">
-              <li class="footer__list-item"><h3 class="footer__list-title">Utility Pages</h3></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Start Here</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Style guide</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">404 Not Found</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Password Protected</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Licenses</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Changelog</a></li>
+              <li class="footer__list-item">
+                <h3 class="footer__list-title">Utility Pages</h3>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Start Here</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Style guide</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">404 Not Found</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Password Protected</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Licenses</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Changelog</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    <section class="copyright">
+    <div class="copyright">
       <div class="container">
-        <div class="row copyright__wrapper d-flex align-items-center justify-content-lg-between justify-content-center">
+        <div
+          class="row copyright__wrapper d-flex align-items-center justify-content-lg-between justify-content-center"
+        >
           <ul class="copyright__list d-md-flex d-block col-12 col-md-auto">
             <li class="copyright__item">Copyright © Branding X</li>
-            <li class="copyright__item copyright__item--decorative d-md-flex d-none">|</li>
+            <li
+              class="copyright__item copyright__item--decorative d-md-flex d-none"
+            >
+              |
+            </li>
             <li class="copyright__item">Designed by BRIX Templates</li>
-            <li class="copyright__item copyright__item--decorative d-md-flex d-none">-</li>
+            <li
+              class="copyright__item copyright__item--decorative d-md-flex d-none"
+            >
+              -
+            </li>
             <li class="copyright__item">Powered by Webflow</li>
           </ul>
           <div class="social-network col-auto">
             <a class="social-network__link" href="#">
-              <img class="social-network__img" src="images/facebook-icon.svg" alt="Facebook Icon" width="12" height="22">
+              <img
+                class="social-network__img"
+                src="images/facebook-icon.svg"
+                alt="Facebook Icon"
+                width="12"
+                height="22"
+              />
             </a>
             <a class="social-network__link" href="#">
-              <img class="social-network__img" src="images/twitter-icon.svg" alt="Twitter Icon" width="22" height="20">
+              <img
+                class="social-network__img"
+                src="images/twitter-icon.svg"
+                alt="Twitter Icon"
+                width="22"
+                height="20"
+              />
             </a>
             <a class="social-network__link" href="#">
-              <img class="social-network__img" src="images/instagram-icon.svg" alt="Instagram Icon" width="22" height="22">
+              <img
+                class="social-network__img"
+                src="images/instagram-icon.svg"
+                alt="Instagram Icon"
+                width="22"
+                height="22"
+              />
             </a>
             <a class="social-network__link" href="#">
-              <img class="social-network__img" src="images/linked-in-icon.svg" alt="Linked In Icon" width="22" height="22">
+              <img
+                class="social-network__img"
+                src="images/linked-in-icon.svg"
+                alt="Linked In Icon"
+                width="22"
+                height="22"
+              />
             </a>
             <a class="social-network__link" href="#">
-              <img class="social-network__img" src="images/youtube-icon.svg" alt="Youtube Icon" width="25" height="17">
+              <img
+                class="social-network__img"
+                src="images/youtube-icon.svg"
+                alt="Youtube Icon"
+                width="25"
+                height="17"
+              />
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>
