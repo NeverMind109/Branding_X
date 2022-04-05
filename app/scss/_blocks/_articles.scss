@@ -12,6 +12,9 @@
     border: none;
     border-radius: 0;
     padding: 0 15px;
+    &:hover {
+      color: #ff7549;
+    }
   }
   &__card-image {
     margin-bottom: 32px;
