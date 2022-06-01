@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Branding X</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,7 +82,9 @@
         <div class="hero__inner">
           <div class="hero__info-container">
             <div class="hero__info-wrapper">
-              <div class="hero__info-content">
+              <div
+                class="hero__info-content animate__animated animate__fadeInLeft"
+              >
                 <h1 class="hero__title">
                   We're a creative design agency from Los Angeles, CA
                 </h1>
@@ -101,13 +104,16 @@
             </div>
             <div class="hero__image-container">
               <div class="hero__image-wrapper">
-                <img
-                  class="hero__img"
-                  src="images/hero-image.jpg"
-                  alt=""
-                  width="590"
-                  height="895"
-                />
+                <picture>
+                  <source srcset="images/hero-image.webp" type="image/webp" />
+                  <img
+                    class="hero__img"
+                    src="images/hero-image.jpg"
+                    width="590"
+                    height="895"
+                    alt=""
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -133,7 +139,10 @@
             <div
               class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 services__cards d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
             >
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -155,7 +164,10 @@
                   </p>
                 </div>
               </div>
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -177,7 +189,10 @@
                   </p>
                 </div>
               </div>
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -199,7 +214,10 @@
                   </p>
                 </div>
               </div>
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.5s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -221,7 +239,10 @@
                   </p>
                 </div>
               </div>
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.6s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -243,7 +264,10 @@
                   </p>
                 </div>
               </div>
-              <div class="card services__card">
+              <div
+                class="card services__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.7s"
+              >
                 <div class="card-img-top services__card-image">
                   <img
                     class="services__card-img"
@@ -276,12 +300,15 @@
               class="row heading d-flex justify-content-between align-items-center flex-column flex-lg-row col-12"
             >
               <h2
-                class="section-title heading__title history__title col-lg-5 col-12"
+                class="section-title heading__title history__title col-lg-5 col-12 wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.2s"
+                data-wow-duration="2s"
               >
                 Our agency started back in 2002
               </h2>
               <a
-                class="more-btn history__btn d-flex justify-self-end justify-content-center col-lg-4 col-12"
+                class="more-btn history__btn d-flex justify-self-end justify-content-center col-lg-4 col-12 wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.3s"
                 href="#"
                 ><span class="more-btn__text">More About Us</span></a
               >
@@ -290,7 +317,10 @@
               class="row history__block d-flex flex-wrap flex-xl-nowrap justify-content-lg-center"
             >
               <div class="history__division col-lg-auto col-12">
-                <p class="history__text history__text--left">
+                <p
+                  class="history__text history__text--left wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
                   Pellentesque sit amet porttitor eget dolor morbi non turpis
                   egestas maecenas pharetra convallis posuere netus et malesuada
                   fames ac fames ac turpis egestas sed tempus urna sit amet
@@ -298,13 +328,19 @@
                   augue.
                 </p>
                 <div class="history__image">
-                  <img
-                    class="history__img"
-                    src="images/history-block-img-1.jpg"
-                    alt=""
-                    width="468"
-                    height="468"
-                  />
+                  <picture>
+                    <source
+                      srcset="images/history-block-img-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="history__img"
+                      src="images/history-block-img-1.jpg"
+                      width="468"
+                      height="468"
+                      alt=""
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="history__division col-xxl-auto d-xxl-flex d-none">
@@ -320,13 +356,19 @@
               </div>
               <div class="history__division col-lg-auto col-12">
                 <div class="history__image">
-                  <img
-                    class="history__img"
-                    src="images/history-block-img-3.jpg"
-                    alt=""
-                    width="492"
-                    height="492"
-                  />
+                  <picture>
+                    <source
+                      srcset="images/history-block-img-3.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="history__img"
+                      src="images/history-block-img-3.jpg"
+                      width="468"
+                      height="468"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="history__image">
                   <img
@@ -337,7 +379,10 @@
                     height="236"
                   />
                 </div>
-                <p class="history__text history__text--right">
+                <p
+                  class="history__text history__text--right wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.5s"
+                >
                   Pellentesque sit amet porttitor eget dolor morbi non turpis
                   egestas maecenas pharetra convallis posuere netus et malesuada
                   fames ac fames ac turpis egestas sed tempus urna sit amet
@@ -367,7 +412,8 @@
           </div>
           <div class="portfolio__projects">
             <div
-              class="row portfolio__project d-flex align-items-start justify-content-between"
+              class="row portfolio__project d-flex align-items-start justify-content-between wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
             >
               <div class="portfolio__project-name col-3">
                 <span class="portfolio__project-theme">Branding</span>
@@ -385,7 +431,8 @@
               </div>
             </div>
             <div
-              class="row portfolio__project d-flex align-items-start justify-content-between"
+              class="row portfolio__project d-flex align-items-start justify-content-between wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
             >
               <div class="portfolio__project-name col-3">
                 <span class="portfolio__project-theme">Graphic Design</span>
@@ -403,7 +450,8 @@
               </div>
             </div>
             <div
-              class="row portfolio__project d-flex align-items-start justify-content-between"
+              class="row portfolio__project d-flex align-items-start justify-content-between wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
             >
               <div class="portfolio__project-name col-3">
                 <span class="portfolio__project-theme">Web Design</span>
@@ -421,7 +469,8 @@
               </div>
             </div>
             <div
-              class="row portfolio__project d-flex align-items-start justify-content-between"
+              class="row portfolio__project d-flex align-items-start justify-content-between wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
             >
               <div class="portfolio__project-name col-3">
                 <span class="portfolio__project-theme">Graphic Design</span>
@@ -446,10 +495,17 @@
           <div class="promo__info-container">
             <div class="promo__info-wrapper">
               <div class="promo__info-content">
-                <h1 class="section-title promo__title">
+                <h1
+                  class="section-title promo__title wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.2s"
+                >
                   Have a project? Get in touch today
                 </h1>
-                <a class="contact-btn promo__contact" href="#"
+                <a
+                  class="contact-btn promo__contact wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.4s"
+                  data-wow-duration="2s"
+                  href="#"
                   ><span class="contact-btn__text">Contact us</span></a
                 >
               </div>
@@ -490,7 +546,11 @@
             <div
               class="row steps__cards row-cols-1 row-cols-md-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
             >
-              <div class="card steps__card">
+              <div
+                class="card steps__card wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.2s"
+                data-wow-duration="2s"
+              >
                 <div class="card-img-top steps__card-image">
                   <img
                     class="steps__card-img"
@@ -512,7 +572,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card steps__card">
+              <div
+                class="card steps__card wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.4s"
+                data-wow-duration="2s"
+              >
                 <div class="card-img-top steps__card-image">
                   <img
                     class="steps__card-img"
@@ -533,7 +597,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card steps__card">
+              <div
+                class="card steps__card wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.6s"
+                data-wow-duration="2s"
+              >
                 <div class="card-img-top steps__card-image">
                   <img
                     class="steps__card-img"
@@ -556,10 +624,16 @@
               </div>
             </div>
             <div class="steps__buttons">
-              <a class="contact-btn steps__contact" href="#"
+              <a
+                class="contact-btn steps__contact wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+                href="#"
                 ><span class="contact-btn__text">Contact us</span></a
               >
-              <a class="more-btn steps__more" href="#"
+              <a
+                class="more-btn steps__more wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+                href="#"
                 ><span class="more-btn__text">Our Projects</span></a
               >
             </div>
@@ -586,15 +660,26 @@
             <div
               class="row articles__cards row-cols-1 row-cols-lg-3 d-flex flex-wrap align-items-start justify-content-lg-between justify-content-center col-12"
             >
-              <a class="card articles__card" href="#">
+              <a
+                class="card articles__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+                data-wow-duration="2s"
+                href="#"
+              >
                 <div class="card-img-top articles__card-image">
-                  <img
-                    class="articles__card-img"
-                    src="images/articles-img-1.jpg"
-                    alt=""
-                    width="388"
-                    height="388"
-                  />
+                  <picture class="articles__card-img">
+                    <source
+                      srcset="images/articles-img-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="articles__card-img"
+                      src="images/articles-img-1.jpg"
+                      width="388"
+                      height="388"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="card-body articles__card-body">
                   <div class="articles__card-name">
@@ -611,7 +696,12 @@
                   </p>
                 </div>
               </a>
-              <a class="card articles__card" href="#">
+              <a
+                class="card articles__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+                data-wow-duration="2s"
+                href="#"
+              >
                 <div class="card-img-top articles__card-image">
                   <img
                     class="articles__card-img"
@@ -635,15 +725,23 @@
                   </p>
                 </div>
               </a>
-              <a class="card articles__card" href="#">
+              <a
+                class="card articles__card wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.6s"
+                data-wow-duration="2s"
+                href="#"
+              >
                 <div class="card-img-top articles__card-image">
-                  <img
-                    class="articles__card-img"
-                    src="images/articles-3.jpg"
-                    alt=""
-                    width="388"
-                    height="388"
-                  />
+                  <picture>
+                    <source srcset="images/articles-3.webp" type="image/webp" />
+                    <img
+                      class="articles__card-img"
+                      src="images/articles-3.jpg"
+                      width="388"
+                      height="388"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="card-body articles__card-body">
                   <div class="articles__card-name">
@@ -670,10 +768,18 @@
           >
             <h2 class="contacts__title col-lg-5 col-12">Let's work together</h2>
             <div class="contacts__communication col-lg-5 col-12">
-              <a class="contacts__item" href="mailto:contact@branding.com"
+              <a
+                class="contacts__item wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.2s"
+                data-wow-duration="2s"
+                href="mailto:contact@branding.com"
                 >contact@branding.com</a
               >
-              <a class="contacts__item" href="tel:+14148403207"
+              <a
+                class="contacts__item wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.5s"
+                data-wow-duration="2s"
+                href="tel:+14148403207"
                 >+1 (414) 840 - 3207</a
               >
             </div>
@@ -791,7 +897,11 @@
             <li class="copyright__item">Powered by Webflow</li>
           </ul>
           <div class="social-network col-auto">
-            <a class="social-network__link" href="#">
+            <a
+              class="social-network__link"
+              href="#"
+              aria-label="Our Facebook Page"
+            >
               <img
                 class="social-network__img"
                 src="images/facebook-icon.svg"
@@ -800,7 +910,11 @@
                 height="22"
               />
             </a>
-            <a class="social-network__link" href="#">
+            <a
+              class="social-network__link"
+              href="#"
+              aria-label="Our Twitter Page"
+            >
               <img
                 class="social-network__img"
                 src="images/twitter-icon.svg"
@@ -809,7 +923,11 @@
                 height="20"
               />
             </a>
-            <a class="social-network__link" href="#">
+            <a
+              class="social-network__link"
+              href="#"
+              aria-label="Our Instagram Page"
+            >
               <img
                 class="social-network__img"
                 src="images/instagram-icon.svg"
@@ -818,7 +936,11 @@
                 height="22"
               />
             </a>
-            <a class="social-network__link" href="#">
+            <a
+              class="social-network__link"
+              href="#"
+              aria-label="Our Linked In Page"
+            >
               <img
                 class="social-network__img"
                 src="images/linked-in-icon.svg"
@@ -827,7 +949,11 @@
                 height="22"
               />
             </a>
-            <a class="social-network__link" href="#">
+            <a
+              class="social-network__link"
+              href="#"
+              aria-label="Our YouTube Page"
+            >
               <img
                 class="social-network__img"
                 src="images/youtube-icon.svg"

@@ -19,6 +19,7 @@
     font-size: 32px;
     line-height: 49px;
     color: #181a3f;
+    transition: color 0.3s;
     &::before {
       content: "/";
       font-family: "Urbanist", sans-serif;

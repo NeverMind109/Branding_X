@@ -12,8 +12,13 @@
     border: none;
     border-radius: 0;
     padding: 0 15px;
+    transition: color 0.3s;
     &:hover {
       color: #ff7549;
+      .articles__card-title {
+        color: #ff7549;
+        transition: color 0.3s;
+      }
     }
   }
   &__card-image {

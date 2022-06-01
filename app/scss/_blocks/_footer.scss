@@ -18,6 +18,7 @@
     line-height: 32px;
     color: #181a3f;
     margin-bottom: 24px;
+    transition: color 0.3s;
     &::before {
       content: "/";
       font-family: "Urbanist", sans-serif;
@@ -46,6 +47,7 @@
     width: max-content;
     letter-spacing: 0.72px;
     text-transform: uppercase;
+    transition: color 0.3s, text-decoration 0.3s;
     &:hover {
       color: #000;
       text-decoration: underline;

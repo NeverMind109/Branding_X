@@ -30,3 +30,5 @@ $(function () {
     }
   });
 });
+
+new WOW().init();
